@@ -10,9 +10,33 @@ namespace MetriciTest
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Hello World");
-            Console.WriteLine();
+            int[,] matrix = new int[3,3];
+
+            Random randomize = new Random();
+
+            Console.WriteLine("Enter elements of array: ");
+            for (int i = 0; i < matrix.GetLength(2); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(2); j++)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    //matrix[i, j] = randomize.Next(1, 100);
+                    //Console.Write("{0}\t", matrix[i, j]);
+                    Console.Write("Enter value of [{0}, {1}]:", i, j);
+                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+                    //Console.Write("{0}\t", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("\n");
+
+            foreach (var x in matrix)
+            {
+                Console.Write("{0}\t", x);
+            }
+
+            Console.ReadLine();
         }
     }
 }
