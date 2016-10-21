@@ -15,9 +15,9 @@ namespace MetriciTest
             Random randomize = new Random();
 
             Console.WriteLine("Enter elements of array: ");
-            for (int i = 0; i < matrix.GetLength(2); i++)
+            for (int i = 0; i < matrix.GetLength(1); i++)
             {
-                for (int j = 0; j < matrix.GetLength(2); j++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     //matrix[i, j] = randomize.Next(1, 100);
