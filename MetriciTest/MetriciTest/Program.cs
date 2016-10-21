@@ -15,27 +15,22 @@ namespace MetriciTest
             Console.WriteLine();
 
             int[,] matrix = new int[2,3];
-            var rows = matrix.GetLength(2);
-            var colums = matrix.GetLength(3);
+            var rows = matrix.GetLength(1);
+            var colums = matrix.GetLength(1);
+        }
 
-            for (int i = 0; i < length; i++)
-            {
-                
-            }
-
-            for (int i = 0; i < matrix.GetLength(1); i++)
-            {
+        static void PrintArray (string[,] matrix)
+        {
+             for (int i = 0; i < matrix.GetLength(1); i++)
+             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    Console.ForegroundColor=ConsoleColor.DarkGray;
-
-                    Console.Write("Enter value of [{0}, {1}]: ", i, j);
-
-                    var stringValue = Console.ReadLine();
+                {   
+                   Console.ReadLine(); 
+                   Console.Write(matrix[i,j] + "{0}" + "{1}", i < matrix.Length-1, j < matrix.Length -1);
                 }
             }
 
-
-        }
+            Console.WriteLine();
+        } 
     }
 }
