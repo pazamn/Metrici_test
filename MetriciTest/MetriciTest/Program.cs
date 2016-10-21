@@ -14,9 +14,10 @@ namespace MetriciTest
             Console.WriteLine("Hello World");
             Console.WriteLine();
 
-            int[,] matrix = new int[2,3];
-            var rows = matrix.GetLength(2);
-            var colums = matrix.GetLength(3);
+            
+            int[,] matrix = new int[2,2];
+            var rows = matrix.GetLength(1);
+            var colums = matrix.GetLength(1);
 
             for (int i = 0; i < matrix.GetLength(1); i++)
             {
@@ -26,11 +27,13 @@ namespace MetriciTest
 
                     Console.Write("Enter value of [{0}, {1}]: ", i, j);
 
-                    var stringValue = Console.ReadLine();
+                    string stringValue = Console.ReadLine();
                 }
             }
 
-
+            
+            
+            Console.ReadLine();
         }
     }
 }
