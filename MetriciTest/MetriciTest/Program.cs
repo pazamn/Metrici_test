@@ -13,26 +13,6 @@ namespace MetriciTest
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Hello World");
             Console.WriteLine();
-
-            int[,] matrix = new int[2,3];
-            var rows = matrix.GetLength(2);
-            var colums = matrix.GetLength(3);
-
-        static void PrintArray (string[,] matrix)
-        {
-             for (int i = 0; i < matrix.GetLength(1); i++)
-             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    Console.ForegroundColor=ConsoleColor.DarkGray;
-
-                    Console.Write("Enter value of [{0}, {1}]: ", i, j);
-
-                    var stringValue = Console.ReadLine();
-                }
-            }
-
-
         }
     }
 }
