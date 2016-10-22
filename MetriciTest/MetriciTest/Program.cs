@@ -19,22 +19,17 @@ namespace MetriciTest
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    //matrix[i, j] = randomize.Next(1, 100);
-                    //Console.Write("{0}\t", matrix[i, j]);
-                    Console.Write("Enter value of [{0}, {1}]:", i, j);
-                    matrix[i, j] = Convert.ToInt32(Console.ReadLine());
-                    //Console.Write("{0}\t", matrix[i, j]);
+                    //Console.ForegroundColor = ConsoleColor.Red;
+                    matrix[i, j] = randomize.Next(1, 100);
+                    Console.Write("{0}\t", matrix[i, j]);
+                    //Console.Write("Enter value of [{0}, {1}]:", i, j);
+                    //matrix[i, j] = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("{0}\t", matrix[i, j]);
                 }
                 Console.WriteLine();
             }
 
             Console.WriteLine("\n");
-
-            foreach (var x in matrix)
-            {
-                Console.Write("{0}\t", x);
-            }
 
             Console.ReadLine();
         }
