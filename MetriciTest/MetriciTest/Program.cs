@@ -10,11 +10,9 @@ namespace MetriciTest
     {
         static void Main(string[] args)
         {
-            int[,] matrix = new int[3,3];
+            int[,] matrix = new int[8,8];
 
             Random randomize = new Random();
-
-           
 
             //Console.WriteLine("Enter elements of array: ");
             for (int i = 0; i < matrix.GetLength(1); i++)
